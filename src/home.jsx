@@ -43,7 +43,7 @@ const App = () => {
                 <section>
                     <h2>Student Registration Form</h2>
                     <form onSubmit={handleSubmit}>
-                        <input
+                        <input className="f-name"
                             type="text"
                             name="firstName"
                             placeholder="First Name"
@@ -51,15 +51,16 @@ const App = () => {
                             onChange={handleInputChange}
                             required
                         />
-                        <input
+                        <input className="l-name"
                             type="text"
                             name="lastName"
                             placeholder="Last Name"
                             value={formData.lastName}
                             onChange={handleInputChange}
                             required
-                        />
-                        <input
+                        /> 
+                        <br/>
+                        <input className="d-birth"
                             type="date"
                             name="dob"
                             placeholder="Date of Birth"
@@ -67,7 +68,7 @@ const App = () => {
                             onChange={handleInputChange}
                             required
                         />
-                        <input
+                        <input className="nationality"
                             type="text"
                             name="nationality"
                             placeholder="Nationality"
@@ -107,7 +108,7 @@ const App = () => {
                                 Other
                             </label>
                         </div>
-                        <input
+                        <input className="email"
                             type="email"
                             name="email"
                             placeholder="Email Address"
@@ -115,22 +116,24 @@ const App = () => {
                             onChange={handleInputChange}
                             required
                         />
-                        <input
+                        <input className="p-number"
                             type="text"
                             name="phone"
                             placeholder="Phone Number"
                             value={formData.phone}
                             onChange={handleInputChange}
                             required
-                        />
-                        <button type="submit">Submit</button>
+                        /> <br />
+                        <button className="button1" type="submit">Submit</button>
                     </form>
                 </section>
+
+                <div>
                 <section>
                     <h2>Students List</h2>
-                    <table>
-                        <thead>
-                            <tr>
+                    <table >
+                        <thead >
+                            <tr >
                                 <th>ID</th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
@@ -155,6 +158,7 @@ const App = () => {
                         </tbody>
                     </table>
                 </section>
+                </div>
             </main>
         </div>
     );

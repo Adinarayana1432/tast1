@@ -2,4 +2,107 @@
     width:100%;
     background-color: antiquewhite;
     min-height:100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+.f-name{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.l-name{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.d-birth{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 245px;
+}
+.nationality{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 245px;
+    margin-left: 5px;
+}
+.email{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 245px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.p-number{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 245px;
+    margin-left: 5px;
+}
+.button1{
+    width: 100px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+.table {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed; /* Optional: Helps with handling wide content */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2; /* Optional: Adds a light background color for the header */
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    th, td {
+        padding: 10px; /* Adjust padding for better readability */
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap; /* Ensures the table doesn't overflow */
+    }
+    
+    th, td {
+        text-align: center; /* Center align text on smaller screens */
+    }
+}
+
+/* For very small screens (e.g., mobile devices) */
+@media screen and (max-width: 480px) {
+    th, td {
+        font-size: 12px; /* Reduce font size for smaller screens */
+        padding: 6px; /* Adjust padding for small screens */
+    }
+
+    table {
+        font-size: 12px; /* Adjust table font size */
+    }
+}
+
