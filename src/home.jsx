@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import './home.css'
+import './home.css';
+
 const App = () => {
     const [formData, setFormData] = useState({
         firstName: "",
@@ -36,12 +37,18 @@ const App = () => {
 
     return (
         <div className="home">
+            <div className="bg">
             <header>
-                <h1>Student Hub</h1>
+                <h1 className="head">Student Hub</h1>
+                <p className="para">Where students come to shine and data comes to life!</p>
+                <button className="btn">Join Us</button>
             </header>
-            <main>
+            </div>
+
+            <div className="bg2">
                 <section>
-                    <h2>Student Registration Form</h2>
+                    <h2 className="res-form">Student Registration Form</h2>
+                    <h1 className="res-form1">Personal Information</h1>
                     <form onSubmit={handleSubmit}>
                         <input className="f-name"
                             type="text"
@@ -77,9 +84,11 @@ const App = () => {
                             required
                         />
                         <div>
+                            <p className="gender">Gender</p>
                             <label>
-                                <input
-                                    type="radio"
+                            
+                                <input className="check"
+                                    type="checkbox"
                                     name="gender"
                                     value="Female"
                                     checked={formData.gender === "Female"}
@@ -88,8 +97,8 @@ const App = () => {
                                 Female
                             </label>
                             <label>
-                                <input
-                                    type="radio"
+                                <input className="check"
+                                    type="checkbox"
                                     name="gender"
                                     value="Male"
                                     checked={formData.gender === "Male"}
@@ -98,8 +107,8 @@ const App = () => {
                                 Male
                             </label>
                             <label>
-                                <input
-                                    type="radio"
+                                <input className="check"
+                                    type="checkbox"
                                     name="gender"
                                     value="Other"
                                     checked={formData.gender === "Other"}
@@ -127,6 +136,7 @@ const App = () => {
                         <button className="button1" type="submit">Submit</button>
                     </form>
                 </section>
+                </div>
 
                 <div>
                 <section>
@@ -159,7 +169,7 @@ const App = () => {
                     </table>
                 </section>
                 </div>
-            </main>
+           
         </div>
     );
 };
