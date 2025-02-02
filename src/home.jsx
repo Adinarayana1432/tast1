@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './home.css'
 const App = () => {
     const [formData, setFormData] = useState({
         firstName: "",
@@ -35,7 +35,7 @@ const App = () => {
     };
 
     return (
-        <div>
+        <div className="home">
             <header>
                 <h1>Student Hub</h1>
             </header>
